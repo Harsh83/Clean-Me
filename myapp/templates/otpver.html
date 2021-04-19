@@ -1,0 +1,10 @@
+{% extends 'header.html' %}
+{% block content %}
+
+<form action="{% url 'otpverify' %}" method="POST">
+    {% csrf_token %}
+    <input type="text" name="user_otp" id="">
+    <input type="submit" value="verify">
+</form>
+
+{% endblock %}

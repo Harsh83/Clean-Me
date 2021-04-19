@@ -1,0 +1,165 @@
+{% extends 'header.html' %}
+{% load static %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    </head>
+
+    <body>
+        <div class="wrapper">
+            
+            <!-- Page Header Start -->
+            <div class="page-header">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h2>My Services</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Page Header End -->
+
+
+            <!-- Portfolio Start -->
+            <div class="portfolio">
+                <div class="container">
+                    <div class="section-header">
+                        <p>Our Project</p>
+                        <h2>Visit Our Project</h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <ul id="portfolio-flters">
+                                <li data-filter="*" class="filter-active">All</li>
+                                <li data-filter=".completed">Completed</li>
+                                <li data-filter=".ongoing">Ongoing</li>
+                                <li data-filter=".upcoming">Upcoming</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row portfolio-container">
+                        <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item completed">
+                            <div class="portfolio-wrap">
+                                <figure>
+                                    <img src="{% static 'img/PH image/1.jpg' %}" alt="Portfolio Image">
+                                    <a class="portfolio-title" href="#">New York</a>
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item ongoing">
+                            <div class="portfolio-wrap">
+                                <figure>
+                                    <img src="{% static 'img/PH image/2.jpg' %}" alt="Portfolio Image">
+                                    <a class="portfolio-title" href="#">Huston</a>
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item upcoming">
+                            <div class="portfolio-wrap">
+                                <figure>
+                                    <img src="{% static 'img/PH image/3.jpeg' %}" alt="Portfolio Image">
+                                    <a class="portfolio-title" href="#">Austin</a>
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item completed">
+                            <div class="portfolio-wrap">
+                                <figure>
+                                    <img src="{% static 'img/PH image/4.jpg' %}" alt="Portfolio Image">
+                                    <a class="portfolio-title" href="#">Los Angeles</a>
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item ongoing">
+                            <div class="portfolio-wrap">
+                                <figure>
+                                    <img src="{% static 'img/PH image/5.jpg' %}" alt="Portfolio Image">
+                                    <a class="portfolio-title" href="#">Las Vegs</a>
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item upcoming">
+                            <div class="portfolio-wrap">
+                                <figure>
+                                    <img src="{% static 'img/PH image/6.jpg' %}" alt="Portfolio Image">
+                                    <a class="portfolio-title" href="#">San Diago</a>
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item completed">
+                            <div class="portfolio-wrap">
+                                <figure>
+                                    <img src="{% static 'img/PH image/7.jpg' %}" alt="Portfolio Image">
+                                    <a class="portfolio-title" href="#">Washington</a>
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item ongoing">
+                            <div class="portfolio-wrap">
+                                <figure>
+                                    <img src="{% static 'img/PH image/8.jpg' %}" alt="Portfolio Image">
+                                    <a class="portfolio-title" href="#">Miami</a>
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item upcoming">
+                            <div class="portfolio-wrap">
+                                <figure>
+                                    <img src="{% static 'img/PH image/9.jpg' %}" alt="Portfolio Image">
+                                    <a class="portfolio-title" href="#">Chicago</a>
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item completed">
+                            <div class="portfolio-wrap">
+                                <figure>
+                                    <img src="{% static 'img/PH image/10.jpg' %}" alt="Portfolio Image">
+                                    <a class="portfolio-title" href="#">Salt Lake City</a>
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item ongoing">
+                            <div class="portfolio-wrap">
+                                <figure>
+                                    <img src="{% static 'img/PH image/11.jfif' %}" alt="Portfolio Image">
+                                    <a class="portfolio-title" href="#">Dallas</a>
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item upcoming">
+                            <div class="portfolio-wrap">
+                                <figure>
+                                    <img src="{% static 'img/PH image/12.jfif' %}" alt="Portfolio Image">
+                                    <a class="portfolio-title" href="#">Denver</a>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 load-more">
+                            <a class="btn" href="#">Load More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Portfolio Start -->
+
+            
+            <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+        </div>
+
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        <script src="{% static 'lib/easing/easing.min.js' %}"></script>
+        <script src="{% static 'lib/owlcarousel/owl.carousel.min.js' %}"></script>
+        <script src="{% static 'lib/isotope/isotope.pkgd.min.js' %}"></script>
+        <script src="{% static 'lib/lightbox/js/lightbox.min.js' %}"></script>
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+    </body>
+</html>
+{% endblock %}

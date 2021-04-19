@@ -1,0 +1,30 @@
+{% extends 'header.html' %}
+{% load static %}
+{% block content %}
+<!DOCTYPE html>
+
+<head>
+    <title>Payment Home</title>
+</head>
+
+<body>
+    <center><h1>Service Confirmation</h1></center>
+    {% if error %}
+    <h3>{{ error }}</h3>
+    {% endif %}
+    <form action="{% url 'pay' %}" method="post">
+        {% csrf_token %}
+        <br>
+        <br>
+        <center>
+        <h2>Please Confirm your service</h2>
+        <br>
+        <input type="hidden" name="email" value="{{email}}">
+        <input type="hidden" name="amount" value="{{amount}}">
+        <input type="submit" name="Submit" value="Confirm & Pay" required>
+        </center>
+    </form>
+</body>
+
+</html>
+{% endblock %}

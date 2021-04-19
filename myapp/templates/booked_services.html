@@ -1,0 +1,39 @@
+{% extends 'header.html' %}
+{% load static %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Booked Services</h1>
+    <form action="{% url 'booked_services' %}" method = "POST">
+        {% csrf_token %}
+        <center>
+        <label for="">Plan amount</label>
+        <input type="number" name="plan" placeholder="Enter Your Plan Amount"><br> -->
+        <label for="">First Name</label>
+        <input type="text" name='firstname' placeholder="firstname" required><br>
+        <label for="">Last Name</label>
+        <input type="text" name='lastname' placeholder="lastname" required><br>
+        <label for="">Contact</label>
+        <input type="text" name='contact' placeholder="contact" required><br>
+        <label for="">E-mail</label>
+        <input type="text" name='email' placeholder="email" required><br>
+        <label for="">Address</label>
+        <textarea name="address" placeholder="Address" cols="30" rows="5"></textarea><br>
+        <form method="POST" action="payments/pay.html">
+            <input type="submit"/>
+        </form>
+    
+        </center>
+
+
+    </form>
+</body>
+</html>
+{% endblock %}
